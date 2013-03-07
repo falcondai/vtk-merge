@@ -24,8 +24,8 @@ if __name__ == '__main__':
     import sys
     import os
     if len(sys.argv) < 4:
-        print 'Need more inputs:'
-        print 'vtk-merge.py in-vtk1 in-vtk2 out-vtk'
+        print 'Need more inputs.'
+        print 'Usage: ./vtk-merge.py in-vtk1 in-vtk2 out-vtk'
     else:
         fn1, fn2, of = sys.argv[1:4]
         if not os.access(fn1, os.R_OK) or not os.access(fn2, os.R_OK):
